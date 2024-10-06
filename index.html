@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 老孫</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>心理測驗</title>
+</head>
+<body>
+    <div class="container">
+        <!-- 第一個頁面 -->
+        <div id="page1" class="page active ">
+    <h1>超準的心理測驗!</h1>
+    <button class="button-link" onclick="nextPage('page2')">開始測驗</button>
+          <h4>由老孫製作<h4>
+</div>
+
+
+        <!-- 第二個頁面 -->
+        <div id="page2" class="page">
+            <h1>你喜歡下列哪一種花</h1>
+            <div class="button-container">
+                <button class="button-link" onclick="nextPage('page3', 'red')">玫瑰</button>
+                <button class="button-link" onclick="nextPage('page3', 'yellow')">向日葵</button>
+                <button class="button-link" onclick="nextPage('page3', 'blue')">菊花</button>
+                <button class="button-link" onclick="nextPage('page3', 'white')">牡丹花</button>
+            </div>
+        </div>
+
+        <!-- 第三個頁面 -->
+        <div id="page3" class="page">
+            <h1>假日時你喜歡</h1>
+            <div class="button-container">
+                <button class="button-link" onclick="nextPage('page4', 'shopping')">跟朋友逛街</button>
+                <button class="button-link" onclick="nextPage('page4', 'cafe')">自己待在咖啡廳</button>
+                <button class="button-link" onclick="nextPage('page4', 'family')">跟家人出遊</button>
+                <button class="button-link" onclick="nextPage('page4', 'rest')">待在家休息</button>
+            </div>
+        </div>
+
+        <!-- 第四個頁面 -->
+        <div id="page4" class="page">
+            <h1>你喜歡哪一個動物</h1>
+            <div class="button-container">
+                <button class="button-link" onclick="nextPage('page5', 'lion')">獅子</button>
+                <button class="button-link" onclick="nextPage('page5', 'sheep')">綿羊</button>
+                <button class="button-link" onclick="nextPage('page5', 'giraffe')">長頸鹿</button>
+                <button class="button-link" onclick="nextPage('page5', 'koala')">無尾熊</button>
+            </div>
+        </div>
+
+        <!-- 第五個頁面 -->
+        <div id="page5" class="page">
+            <h1>你喜歡的冰淇淋口味</h1>
+            <div class="button-container">
+                <button class="button-link" onclick="nextPage('page6', 'vanilla')">香草</button>
+                <button class="button-link" onclick="nextPage('page6', 'chocolate')">巧克力</button>
+                <button class="button-link" onclick="nextPage('page6', 'fruit')">水果</button>
+                <button class="button-link" onclick="nextPage('page6', 'taro')">芋頭</button>
+            </div>
+        </div>
+
+        <!-- 第六個頁面 -->
+        <div id="page6" class="page">
+            <h1>測驗結果<h1>
+            <p id="icecream-message"></p>
+            <img id="icecream-image" src="" alt="冰淇淋" />
+            <button class="button-link" onclick="nextPage('page1')">返回第一頁</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
